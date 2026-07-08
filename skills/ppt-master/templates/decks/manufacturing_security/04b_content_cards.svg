@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <g id="bg">
+    <rect width="1280" height="720" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Page Header -->
+  <g id="page-header">
+    <rect x="60" y="56" width="6" height="40" fill="#00B0F0"/>
+    <text x="84" y="88" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="36" font-weight="700" fill="#0B5395">{{PAGE_TITLE}}</text>
+    <text x="84" y="118" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="13" font-weight="700" fill="#666666" letter-spacing="1.5">{{PAGE_SUBTITLE}}</text>
+  </g>
+
+  <!-- Two Large Side-by-Side Cards -->
+  <g id="cards-layout">
+    <!-- Card 1 -->
+    <g id="card-1">
+      <rect x="60" y="170" width="560" height="420" rx="8" fill="#F2F2F2" stroke="#E0E0E0" stroke-width="1.5"/>
+      <rect x="60" y="170" width="560" height="6" rx="3" fill="#0B5395"/>
+      
+      <text x="90" y="240" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="72" font-weight="900" fill="#00B0F0" fill-opacity="0.25">01</text>
+      
+      <text x="90" y="295" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="24" font-weight="700" fill="#0B5395">{{CARD_TITLE_1}}</text>
+      <text x="90" y="335" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" fill="#666666" font-weight="700">{{CARD_SUBTITLE_1}}</text>
+      
+      <text x="90" y="380" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" fill="#333333">
+        <tspan x="90" dy="0">{{CARD_BODY_1_LINE1}}</tspan>
+        <tspan x="90" dy="26">{{CARD_BODY_1_LINE2}}</tspan>
+        <tspan x="90" dy="26">{{CARD_BODY_1_LINE3}}</tspan>
+      </text>
+    </g>
+
+    <!-- Card 2 -->
+    <g id="card-2">
+      <rect x="660" y="170" width="560" height="420" rx="8" fill="#F2F2F2" stroke="#E0E0E0" stroke-width="1.5"/>
+      <rect x="660" y="170" width="560" height="6" rx="3" fill="#00B0F0"/>
+      
+      <text x="690" y="240" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="72" font-weight="900" fill="#00B0F0" fill-opacity="0.25">02</text>
+      
+      <text x="690" y="295" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="24" font-weight="700" fill="#0B5395">{{CARD_TITLE_2}}</text>
+      <text x="690" y="335" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" fill="#666666" font-weight="700">{{CARD_SUBTITLE_2}}</text>
+      
+      <text x="690" y="380" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" fill="#333333">
+        <tspan x="690" dy="0">{{CARD_BODY_2_LINE1}}</tspan>
+        <tspan x="690" dy="26">{{CARD_BODY_2_LINE2}}</tspan>
+        <tspan x="690" dy="26">{{CARD_BODY_2_LINE3}}</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <g id="page-footer">
+    <line x1="60" y1="650" x2="1220" y2="650" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="60" y="685" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#666666">内部销售培训专用</text>
+    <text x="1220" y="685" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#666666">05</text>
+  </g>
+</svg>

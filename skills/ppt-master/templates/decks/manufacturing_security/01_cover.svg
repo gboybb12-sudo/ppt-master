@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.3" stop-color="#0B5395" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0B5395" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <g id="bg">
+    <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Right Image and Scrim -->
+  <g id="cover-image">
+    <svg x="560" y="0" width="720" height="720" viewBox="0.22687 0 0.54626 1" preserveAspectRatio="none">
+      <image href="assets/image1.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/>
+    </svg>
+    <rect x="560" y="0" width="720" height="720" fill="url(#ggrad1)"/>
+  </g>
+
+  <!-- Accent Circle and Monospace Label -->
+  <g id="cover-header-labels">
+    <ellipse cx="1253" cy="42" rx="17" ry="17" fill="#FFFFFF" fill-opacity="0" stroke-width="2" stroke="#00B0F0"/>
+    <text x="1220" y="48" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" fill="#666666">{{ORGANIZATION}}</text>
+  </g>
+
+  <!-- Left Main Title Block -->
+  <g id="cover-title-group">
+    <text x="60" y="176" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="24" fill="#00B0F0" font-weight="700" letter-spacing="4">{{SUBTITLE}}</text>
+    <rect x="60" y="210" width="6" height="80" fill="#00B0F0"/>
+    <text x="80" y="246" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="42" fill="#0B5395" font-weight="bold">{{TITLE}}</text>
+    <text x="80" y="340" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="20" fill="#666666">{{DESCRIPTION}}</text>
+    <line x1="80" y1="450" x2="440" y2="450" fill="none" stroke-width="1" stroke="#E0E0E0"/>
+  </g>
+
+  <!-- Bottom Accent Band -->
+  <g id="cover-footer-band">
+    <rect x="0" y="530" width="1280" height="190" fill="#0B5395"/>
+    <text x="60" y="580" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="20" fill="#FFFFFF" font-weight="700">{{FOOTER_TITLE}}</text>
+    <text x="60" y="625" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" fill="#B3DDF2">{{FOOTER_SUBTITLE}}</text>
+    <text x="60" y="670" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#B3DDF2">内部销售培训专用 | {{DATE}}</text>
+    
+    <!-- Watermark text in bottom right -->
+    <text x="1220" y="690" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="80" font-weight="bold" fill="#FFFFFF" fill-opacity="0.06" letter-spacing="8">SOLUTION</text>
+  </g>
+</svg>

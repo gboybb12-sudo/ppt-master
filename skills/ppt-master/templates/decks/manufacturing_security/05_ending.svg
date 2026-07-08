@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <g id="bg">
+    <rect width="1280" height="720" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Large Watermark backdrop -->
+  <text x="640" y="300" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="140" font-weight="bold" fill="#666666" fill-opacity="0.03" letter-spacing="12">SECURITY</text>
+
+  <!-- Upper Center Logo/Accent -->
+  <g id="ending-accent">
+    <ellipse cx="640" cy="140" rx="28" ry="28" fill="#FFFFFF" fill-opacity="0" stroke-width="3" stroke="#00B0F0"/>
+    <line x1="640" y1="120" x2="640" y2="160" stroke="#0B5395" stroke-width="3"/>
+    <line x1="620" y1="140" x2="660" y2="140" stroke="#0B5395" stroke-width="3"/>
+  </g>
+
+  <!-- Title Blocks -->
+  <g id="ending-titles">
+    <text x="640" y="240" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="38" font-weight="bold" fill="#0B5395">{{TITLE}}</text>
+    <text x="640" y="285" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="18" fill="#666666">{{SUBTITLE}}</text>
+  </g>
+
+  <!-- Bottom Accent Band (Closing) -->
+  <g id="ending-footer-band">
+    <rect x="0" y="440" width="1280" height="280" fill="#0B5395"/>
+    <text x="640" y="520" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="24" fill="#FFFFFF" font-weight="700">{{SLOGAN}}</text>
+    <text x="640" y="585" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="44" fill="#00B0F0" font-weight="bold">{{THANK_YOU}}</text>
+    <text x="640" y="640" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#B3DDF2">内部销售培训专用 | 2026</text>
+    
+    <!-- Watermark text in bottom right -->
+    <text x="1220" y="690" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="80" font-weight="bold" fill="#FFFFFF" fill-opacity="0.06" letter-spacing="8">SOLUTION</text>
+  </g>
+</svg>

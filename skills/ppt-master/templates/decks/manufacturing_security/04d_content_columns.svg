@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <g id="bg">
+    <rect width="1280" height="720" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Page Header -->
+  <g id="page-header">
+    <rect x="60" y="56" width="6" height="40" fill="#00B0F0"/>
+    <text x="84" y="88" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="36" font-weight="700" fill="#0B5395">{{PAGE_TITLE}}</text>
+    <text x="84" y="118" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="13" font-weight="700" fill="#666666" letter-spacing="1.5">{{PAGE_SUBTITLE}}</text>
+  </g>
+
+  <!-- Four Column Layout -->
+  <g id="columns-layout">
+    <!-- Column 1 -->
+    <g id="column-1">
+      <rect x="60" y="170" width="272" height="420" rx="8" fill="#F2F2F2" stroke="#E0E0E0" stroke-width="1.5"/>
+      <rect x="60" y="170" width="272" height="6" rx="3" fill="#0B5395"/>
+      <use data-icon="tabler-outline/server" x="84" y="200" width="36" height="36" fill="#0B5395"/>
+      <text x="84" y="280" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#0B5395">{{COL_TITLE_1}}</text>
+      <text x="84" y="315" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#00B0F0">{{COL_SUBTITLE_1}}</text>
+      <text x="84" y="360" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#333333">
+        <tspan x="84" dy="0">{{COL_BODY_1_L1}}</tspan>
+        <tspan x="84" dy="24">{{COL_BODY_1_L2}}</tspan>
+        <tspan x="84" dy="24">{{COL_BODY_1_L3}}</tspan>
+      </text>
+    </g>
+
+    <!-- Column 2 -->
+    <g id="column-2">
+      <rect x="356" y="170" width="272" height="420" rx="8" fill="#F2F2F2" stroke="#E0E0E0" stroke-width="1.5"/>
+      <rect x="356" y="170" width="272" height="6" rx="3" fill="#00B0F0"/>
+      <use data-icon="tabler-outline/network" x="380" y="200" width="36" height="36" fill="#00B0F0"/>
+      <text x="380" y="280" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#0B5395">{{COL_TITLE_2}}</text>
+      <text x="380" y="315" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0B5395">{{COL_SUBTITLE_2}}</text>
+      <text x="380" y="360" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#333333">
+        <tspan x="380" dy="0">{{COL_BODY_2_L1}}</tspan>
+        <tspan x="380" dy="24">{{COL_BODY_2_L2}}</tspan>
+        <tspan x="380" dy="24">{{COL_BODY_2_L3}}</tspan>
+      </text>
+    </g>
+
+    <!-- Column 3 -->
+    <g id="column-3">
+      <rect x="652" y="170" width="272" height="420" rx="8" fill="#F2F2F2" stroke="#E0E0E0" stroke-width="1.5"/>
+      <rect x="652" y="170" width="272" height="6" rx="3" fill="#0B5395"/>
+      <use data-icon="tabler-outline/shield-exclamation" x="676" y="200" width="36" height="36" fill="#0B5395"/>
+      <text x="676" y="280" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#0B5395">{{COL_TITLE_3}}</text>
+      <text x="676" y="315" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#00B0F0">{{COL_SUBTITLE_3}}</text>
+      <text x="676" y="360" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#333333">
+        <tspan x="676" dy="0">{{COL_BODY_3_L1}}</tspan>
+        <tspan x="676" dy="24">{{COL_BODY_3_L2}}</tspan>
+        <tspan x="676" dy="24">{{COL_BODY_3_L3}}</tspan>
+      </text>
+    </g>
+
+    <!-- Column 4 -->
+    <g id="column-4">
+      <rect x="948" y="170" width="272" height="420" rx="8" fill="#F2F2F2" stroke="#E0E0E0" stroke-width="1.5"/>
+      <rect x="948" y="170" width="272" height="6" rx="3" fill="#00B0F0"/>
+      <use data-icon="tabler-outline/cloud" x="972" y="200" width="36" height="36" fill="#00B0F0"/>
+      <text x="972" y="280" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#0B5395">{{COL_TITLE_4}}</text>
+      <text x="972" y="315" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0B5395">{{COL_SUBTITLE_4}}</text>
+      <text x="972" y="360" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#333333">
+        <tspan x="972" dy="0">{{COL_BODY_4_L1}}</tspan>
+        <tspan x="972" dy="24">{{COL_BODY_4_L2}}</tspan>
+        <tspan x="972" dy="24">{{COL_BODY_4_L3}}</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <g id="page-footer">
+    <line x1="60" y1="650" x2="1220" y2="650" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="60" y="685" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#666666">内部销售培训专用</text>
+    <text x="1220" y="685" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#666666">08</text>
+  </g>
+</svg>

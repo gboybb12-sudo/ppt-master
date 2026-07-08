@@ -1,4 +1,10 @@
 {
+  "manufacturing_security": {
+    "summary": "制造业数字化转型与信息安全解决方案的经典工业蓝配色模板。包含高可用架构、边界防护、终端防泄密与安全案例等多套复用板式。",
+    "canvas_format": "ppt169",
+    "page_count": 10,
+    "primary_color": "#0B5395"
+  },
   "中国电信": {
     "summary": "China Telecom related briefings, 政企数字化方案, 转型规划, 内部汇报.",
     "canvas_format": "ppt169",

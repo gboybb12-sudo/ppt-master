@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <g id="bg">
+    <rect width="1280" height="720" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Page Header -->
+  <g id="page-header">
+    <rect x="60" y="56" width="6" height="40" fill="#00B0F0"/>
+    <text x="84" y="88" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="36" font-weight="700" fill="#0B5395">{{PAGE_TITLE}}</text>
+    <text x="84" y="118" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="13" font-weight="700" fill="#666666" letter-spacing="1.5">{{PAGE_SUBTITLE}}</text>
+  </g>
+
+  <!-- Content Block: Left Text / Right Image -->
+  <g id="content-body">
+    <!-- Left Column text -->
+    <g id="text-column">
+      <!-- Subsection 1 -->
+      <use data-icon="tabler-outline/activity" x="60" y="170" width="24" height="24" fill="#00B0F0"/>
+      <text x="96" y="188" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#0B5395">{{SECTION_TITLE_1}}</text>
+      <text x="60" y="225" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" fill="#333333">
+        <tspan x="60" dy="0">{{BODY_TEXT_1_LINE1}}</tspan>
+        <tspan x="60" dy="26">{{BODY_TEXT_1_LINE2}}</tspan>
+      </text>
+
+      <!-- Subsection 2 -->
+      <use data-icon="tabler-outline/network" x="60" y="340" width="24" height="24" fill="#00B0F0"/>
+      <text x="96" y="358" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="20" font-weight="700" fill="#0B5395">{{SECTION_TITLE_2}}</text>
+      <text x="60" y="395" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="16" fill="#333333">
+        <tspan x="60" dy="0">{{BODY_TEXT_2_LINE1}}</tspan>
+        <tspan x="60" dy="26">{{BODY_TEXT_2_LINE2}}</tspan>
+      </text>
+
+      <!-- Takeaway statement -->
+      <rect x="60" y="500" width="660" height="90" rx="6" fill="#F2F2F2" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="60" y="500" width="6" height="90" rx="3" fill="#0B5395"/>
+      <text x="80" y="535" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" font-weight="700" fill="#00B0F0" letter-spacing="1.5">KEY TAKEAWAY · 核心总结</text>
+      <text x="80" y="562" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="15" fill="#333333">{{TAKEAWAY_TEXT}}</text>
+    </g>
+
+    <!-- Right Image block -->
+    <g id="image-column">
+      <rect x="760" y="170" width="460" height="420" rx="8" fill="#F2F2F2" stroke="#E0E0E0" stroke-width="1"/>
+      <image href="assets/image3.png" x="770" y="180" width="440" height="400" preserveAspectRatio="xMidYMid slice" rx="4"/>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <g id="page-footer">
+    <line x1="60" y1="650" x2="1220" y2="650" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="60" y="685" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#666666">内部销售培训专用</text>
+    <text x="1220" y="685" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#666666">04</text>
+  </g>
+</svg>

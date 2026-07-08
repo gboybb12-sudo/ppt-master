@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <g id="bg">
+    <rect width="1280" height="720" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Page Header -->
+  <g id="page-header">
+    <rect x="60" y="56" width="6" height="40" fill="#00B0F0"/>
+    <text x="84" y="88" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="36" font-weight="700" fill="#0B5395">{{PAGE_TITLE}}</text>
+    <text x="84" y="118" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="13" font-weight="700" fill="#666666" letter-spacing="1.5">{{PAGE_SUBTITLE}}</text>
+  </g>
+
+  <!-- Horizontal Timeline Layout -->
+  <g id="timeline-layout">
+    <!-- Main horizontal path -->
+    <line x1="120" y1="360" x2="1160" y2="360" stroke="#0B5395" stroke-width="4"/>
+
+    <!-- Node 1 -->
+    <g id="node-1">
+      <circle cx="200" cy="360" r="18" fill="none" stroke="#0B5395" stroke-width="2"/>
+      <circle cx="200" cy="360" r="10" fill="#FFFFFF" stroke="#00B0F0" stroke-width="4"/>
+      
+      <!-- Label / Title above -->
+      <text x="200" y="270" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#0B5395">{{NODE_TITLE_1}}</text>
+      <text x="200" y="295" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#00B0F0" font-weight="700">{{NODE_SUBTITLE_1}}</text>
+      
+      <!-- Description below -->
+      <text x="200" y="405" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#333333">
+        <tspan x="200" dy="0">{{NODE_BODY_1_L1}}</tspan>
+        <tspan x="200" dy="22">{{NODE_BODY_1_L2}}</tspan>
+      </text>
+    </g>
+
+    <!-- Node 2 -->
+    <g id="node-2">
+      <circle cx="500" cy="360" r="18" fill="none" stroke="#0B5395" stroke-width="2"/>
+      <circle cx="500" cy="360" r="10" fill="#FFFFFF" stroke="#00B0F0" stroke-width="4"/>
+      
+      <!-- Label / Title above -->
+      <text x="500" y="270" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#0B5395">{{NODE_TITLE_2}}</text>
+      <text x="500" y="295" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#00B0F0" font-weight="700">{{NODE_SUBTITLE_2}}</text>
+      
+      <!-- Description below -->
+      <text x="500" y="405" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#333333">
+        <tspan x="500" dy="0">{{NODE_BODY_2_L1}}</tspan>
+        <tspan x="500" dy="22">{{NODE_BODY_2_L2}}</tspan>
+      </text>
+    </g>
+
+    <!-- Node 3 -->
+    <g id="node-3">
+      <circle cx="800" cy="360" r="18" fill="none" stroke="#0B5395" stroke-width="2"/>
+      <circle cx="800" cy="360" r="10" fill="#FFFFFF" stroke="#00B0F0" stroke-width="4"/>
+      
+      <!-- Label / Title above -->
+      <text x="800" y="270" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#0B5395">{{NODE_TITLE_3}}</text>
+      <text x="800" y="295" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#00B0F0" font-weight="700">{{NODE_SUBTITLE_3}}</text>
+      
+      <!-- Description below -->
+      <text x="800" y="405" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#333333">
+        <tspan x="800" dy="0">{{NODE_BODY_3_L1}}</tspan>
+        <tspan x="800" dy="22">{{NODE_BODY_3_L2}}</tspan>
+      </text>
+    </g>
+
+    <!-- Node 4 -->
+    <g id="node-4">
+      <circle cx="1100" cy="360" r="18" fill="none" stroke="#0B5395" stroke-width="2"/>
+      <circle cx="1100" cy="360" r="10" fill="#FFFFFF" stroke="#00B0F0" stroke-width="4"/>
+      
+      <!-- Label / Title above -->
+      <text x="1100" y="270" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="18" font-weight="700" fill="#0B5395">{{NODE_TITLE_4}}</text>
+      <text x="1100" y="295" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#00B0F0" font-weight="700">{{NODE_SUBTITLE_4}}</text>
+      
+      <!-- Description below -->
+      <text x="1100" y="405" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#333333">
+        <tspan x="1100" dy="0">{{NODE_BODY_4_L1}}</tspan>
+        <tspan x="1100" dy="22">{{NODE_BODY_4_L2}}</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <g id="page-footer">
+    <line x1="60" y1="650" x2="1220" y2="650" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="60" y="685" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#666666">内部销售培训专用</text>
+    <text x="1220" y="685" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, Arial, sans-serif" font-size="14" fill="#666666">16</text>
+  </g>
+</svg>
