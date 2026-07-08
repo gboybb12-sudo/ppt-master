@@ -1,7 +1,7 @@
 # 宇辰科技品牌视觉规范 (Brand Visual Guide)
 
-> 版本：v5.3 | 生效日期：2026-07-05
-> 更新说明：封面页改为 50/50 布局（左侧纯白 + 右侧双图叠加），移除背景装饰文字，Slogan 条从底部对齐不留空
+> 版本：v6.0 | 生效日期：2026-07-07
+> 更新说明：封面与章节分隔页引入 50/50 布局与白色水平渐变过渡光晕，支持 5 张实景科技背景图的随机调用与替换。章节分隔页排版高度还原。修复 Q&A 字符转义。
 
 ---
 
@@ -62,6 +62,7 @@
 | 封面分隔线 | 水平 (0°) | 亮蓝 `#00B0F0` | 深蓝 `#0B5395` |
 | 右侧占位背景 | 水平 (0°) | `#C8DDEE` | `#E8F0F8` |
 | 封面 Slogan 条 | 水平 (0°) | 页脚深 `#1A3F5E` | 页脚中 `#2C5F8A` |
+| 过渡光晕遮罩 | 水平 (0°) | 纯白 `#FFFFFF` (Alpha 255) | 纯白 `#FFFFFF` (Alpha 0) |
 
 ### 半透明与层次
 - **封面过渡遮罩**：白色 `#FFFFFF` → 白色（半透明模拟，用白色渐变覆盖在分界处）
@@ -130,6 +131,14 @@
 - 圆角矩形作为外框
 - 表格内部无边框或极细边框
 
+### D.4 灵活布局形式 (v6.0 新增)
+正文排版不是固定的，应杜绝单一的左右对称双卡片，须根据数据结构、业务逻辑和时序等进行个性化组织：
+- **左右对比**：可分别以浅红边框（警告痛点）和浅蓝边框（解决方案）的左右卡片并行展示。
+- **三列展示**：划分为三张均等的垂直卡片并排摆放，适合模块化、三大特性的内容。
+- **上图下步/流程倒换**：上方放置全宽说明卡片，下方横向放置 1x3 带序号小圆点与标题的步骤卡片，契合时序流程。
+- **横向时间轴 + 底部大卡片**：上方放置 4 阶段的水平卡片连线（代表时间/天数），下方放置全宽团队介绍卡片（分成 3 列），使项目管理页主次分明。
+- **高低错落卡片**：左侧放置高卡片（如 TAC 组织），右侧放置多张扁平卡片上下堆叠（如 SLA 级别），信息对比直观。
+
 ---
 
 ## E. 页脚生成逻辑（v5.0 最终版）
@@ -187,53 +196,29 @@ def add_footer(slide, page_num):
 
 ---
 
-## F. 科技背景图生成参考（Pillow）
+## F. 过渡光晕与实景图辅助处理参考 (Pillow)
 
-封面与章节分隔页的背景图通过 Pillow 程序化生成，无需依赖外部网络图片。
+通过 Pillow 动态生成水平白至透明渐变遮罩图片并叠加到 PPT 中，实现平滑的光晕过渡效果：
 
 ```python
 from PIL import Image, ImageDraw
-import random
 
-def generate_tech_background(width, height, filename, style="cover"):
+def generate_gradient_mask(width, height, filename):
     """
-    生成科技感背景图并保存。
-    style:
-      - "cover": 深蓝渐变底 + 网格线 + 发光节点 + 流动线条
-      - "chapter1": 数据流风格，六边形网格 + 粒子流
-      - "chapter2": 网络拓扑风格，节点连线 + 脉冲圆环
+    生成一张水平白到透明渐变遮罩图片。
+    左边缘为 100% 不透明纯白，右边缘为 100% 全透明。
     """
-    # 基底色
-    base = (11, 83, 149)  # 深蓝 #0B5395
-    img = Image.new('RGB', (width, height), base)
-    draw = ImageDraw.Draw(img)
-
-    # 绘制渐变底层（水平：深蓝 → 亮蓝）
+    img = Image.new('RGBA', (width, height), (255, 255, 255, 0))
     for x in range(width):
-        ratio = x / width
-        r = int(11 + (0 - 11) * ratio)
-        g = int(83 + (176 - 83) * ratio)
-        b = int(149 + (240 - 149) * ratio)
-        draw.line([(x, 0), (x, height)], fill=(r, g, b))
-
-    # 叠加网格线
-    grid_color = (100, 160, 210)
-    for i in range(0, width, 40):
-        draw.line([(i, 0), (i, height)], fill=grid_color, width=1)
-    for j in range(0, height, 40):
-        draw.line([(0, j), (width, j)], fill=grid_color, width=1)
-
-    # 随机发光节点
-    for _ in range(30):
-        x = random.randint(0, width)
-        y = random.randint(0, height)
-        r = random.randint(2, 6)
-        draw.ellipse([x-r, y-r, x+r, y+r], fill=(0, 200, 255))
-
+        alpha = int(255 * (1.0 - (x / width)))
+        for y in range(height):
+            img.putpixel((x, y), (255, 255, 255, alpha))
     img.save(filename)
 ```
 
-> **固化资产**：生成后保存到 `assets/cover_bg.png`、`assets/chapter1_bg.png`、`assets/chapter2_bg.png` 等，后续直接嵌入 PPTX。
+> **资产说明**：动态生成后保存至 `assets/white_gradient_mask.png`。在代码中，将该图片插入到主背景实景图上方左侧边缘（高度对齐，宽度约 1.5 ~ 2 英寸），即可形成柔和过渡。
+>
+> **实景背景资源池**：在 `assets/` 下固化 5 张超清科技实景图 `tech_bg_1.png`（数据中心）、`tech_bg_2.png`（网络安全芯片）、`tech_bg_3.png`（智能生产自动化）、`tech_bg_4.png`（比特流加密）、`tech_bg_5.png`（监控大屏）。开发时通过 `random.choice` 进行随机抽取调用。
 
 ---
 
@@ -295,9 +280,8 @@ add_textbox(
 | 元素 | 规格 |
 |------|------|
 | 左侧背景 | 纯白色 `#FFFFFF`，占 50% 宽度 |
-| 右侧背景 | 两张图片叠加，占 50% 宽度 |
-| 右侧底层 | `背景图.png`（桌面文件） |
-| 右侧上层 | `首页背景图.png`（桌面文件） |
+| 右侧背景 | 实景科技背景图，占 50% 宽度，高度填满，随机调用自 `assets/tech_bg_X.png` |
+| 过渡光晕 | 叠加 `assets/white_gradient_mask.png` 渐变遮罩，使边缘自然褪入白色 |
 | 图片填充 | 高度填满幻灯片，宽度拉伸至 50% |
 | Slogan 条 | 从底部向上对齐，不留空白 |
 | 装饰文字 | **已移除**（原 INTELLIGENT / TECHNOLOGY） |
@@ -346,13 +330,13 @@ add_textbox(
 
 每次生成完成后，对照检查：
 
-### Logo 与封面（v5.3）
+### Logo 与封面与章节页（v6.0）
 - [ ] 封面左上角嵌入了真实 Logo 图片（`assets/logo.png`）
 - [ ] Logo 宽度约 1.8 英寸，未拉伸变形
 - [ ] 封面标题为深蓝 `#0B5395` 40pt Bold
 - [ ] 封面左侧 50% 为纯白色背景
-- [ ] 封面右侧 50% 为双图叠加（底层 `背景图.png` + 上层 `首页背景图.png`）
-- [ ] 封面右侧图片高度填满，宽度拉伸至 50%，无留白
+- [ ] 封面与章节页的右侧 50% 为实景科技背景图，且左边缘叠加了 `white_gradient_mask.png` 柔和白光晕，淡出效果自然
+- [ ] 章节分隔页为 50/50 布局，左侧编号采用亮蓝矩形加白字，配以 "CHAPTER ONE" 等亮蓝副标题，要点采用合并单框排版，右下角带有灰色小页码，无底部渐变页脚条
 - [ ] 封面分隔线为渐变（亮蓝→深蓝）
 - [ ] 封面网站为 `https://www.u-pc.com.cn/`
 - [ ] 封面底部 Slogan 条从底部对齐，不留空

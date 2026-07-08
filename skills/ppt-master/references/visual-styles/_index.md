@@ -21,6 +21,7 @@ Each style has its own file with: shape & decoration, typography character, colo
 | Visual style | Character | Best for | Paired rendering | Illus. |
 |---|---|---|---|---|
 | [`swiss-minimal`](./swiss-minimal.md) | Grid-locked, sharp, aggressive whitespace, no decoration | High-end consulting, architecture, type-led | `minimalist-swiss` | sparse |
+| [`yuchen-tech`](./yuchen-tech.md) | 50/50 split, soft transition glow, rounded cards, gradient footer | Corporate tech, bidding proposals, IT systems | `corporate-photo` | supportive |
 | [`soft-rounded`](./soft-rounded.md) | Rounded cards, gentle elevation, approachable | Product, SaaS, training, consumer | `flat` | supportive |
 | [`glassmorphism`](./glassmorphism.md) | Translucent glass panels, gradient light, floating depth | Modern SaaS, fintech, product launches, AI demos | `glassmorphism` | sparse |
 | [`dark-tech`](./dark-tech.md) | Dark canvas, glow accents, geometric precision | Tech, AI, data products, launches | `digital-dashboard` | sparse |

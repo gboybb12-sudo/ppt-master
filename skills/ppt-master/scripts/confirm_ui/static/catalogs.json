@@ -168,6 +168,16 @@
           "desc_ja": "グリッドに沿ったレイアウト、明快な階層、余白を活かした装飾の少ないデザイン。"
         },
         {
+          "id": "yuchen-tech",
+          "label": "yuchen-tech",
+          "label_zh": "宇辰科技 (50/50渐变光晕)",
+          "label_en": "yuchen-tech (50/50 glow-split)",
+          "label_ja": "yuchen-tech (50/50 グラデーション)",
+          "desc_zh": "50/50实景图分割、渐变白光晕遮罩、圆角卡片、渐变页脚。",
+          "desc_en": "50/50 vertical photo split, white gradient transition glow, rounded cards, gradient footer.",
+          "desc_ja": "50/50画像分割、白グラデーションマスク、角丸カード、グラデーションフッター。"
+        },
+        {
           "id": "soft-rounded",
           "label": "soft-rounded",
           "label_zh": "柔和圆角",
